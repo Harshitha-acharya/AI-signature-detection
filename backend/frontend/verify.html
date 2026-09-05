@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>Signature Verification</title>
+
+    <link rel="stylesheet"
+          href="style.css">
+
+</head>
+
+<body>
+
+<div class="verify-container">
+
+    <h1>Signature Verification</h1>
+
+    <p>
+        Upload a genuine signature and
+        the signature you want to verify.
+    </p>
+
+
+    <div class="upload-area">
+
+        <div class="card">
+
+            <h2>REAL SIGNATURE</h2>
+
+            <input
+                type="file"
+                id="realSignature"
+                accept="image/*">
+
+            <img id="realPreview">
+
+        </div>
+
+
+        <div class="card">
+
+            <h2>DOUBTED SIGNATURE</h2>
+
+            <input
+                type="file"
+                id="doubtSignature"
+                accept="image/*">
+
+            <img id="doubtPreview">
+
+        </div>
+
+    </div>
+
+
+    <button onclick="analyzeSignature()">
+        ANALYZE SIGNATURE
+    </button>
+
+
+    <div id="result"></div>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
